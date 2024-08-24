@@ -101,6 +101,31 @@ body {
   }
 
   main {
+    // HERO SECTION
+    section#hero {
+      height: 100vh;
+      background: url('https://blogs.windows.com/wp-content/uploads/prod/sites/2/2019/10/d838e29e23edfca187af47fd65ff2d7e.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    section.product {
+      height: 100vh;
+      background: url('https://getwallpapers.com/wallpaper/full/a/f/6/1253963-top-computer-programming-wallpaper-1920x1080-for-android-tablet.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    section.keyboard {
+      height: 100vh;
+      background: url('https://wallpapercave.com/wp/wp4020829.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
   }
   footer {
     height: 40vh;
