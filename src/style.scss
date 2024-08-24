@@ -64,6 +64,11 @@ body {
           position: absolute;
           top: 1rem;
           right: 1rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        #close-btn:hover {
+          transform: scale(1.2);
         }
         li {
           a {
@@ -85,7 +90,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.6rem;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .hamburger-btn:hover {
+        transform: scale(1.2);
       }
     }
   }
