@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/style.scss src/output.css"
+    "sass": "sass --watch src/style.scss src/output.css",
+    "sass-mobile" : "sass --watch src/mobile.scss src/mobile.css"
   },
   "keywords": [],
   "author": "",

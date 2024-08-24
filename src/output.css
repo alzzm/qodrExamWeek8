@@ -1,6 +1,84 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  color: #f5f7f8;
+  font-family: "Poppins", sans-serif;
+  background-color: #1b1b1b;
+  width: 100%;
+}
+body header {
+  width: 100%;
+  margin: auto;
+  position: fixed;
+}
+body header nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+body header nav.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav.navbar .logo a {
+  color: #f5f7f8;
+}
+body header nav.navbar .logo a h2 {
+  font-style: italic;
+}
+body header nav.navbar ul#menu {
+  width: 100%;
+  height: 100vh;
+  max-width: 16rem;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: #222;
+  text-align: center;
+  padding: 4rem 0;
+  transition: all 0.3s ease;
+}
+body header nav.navbar ul#menu #close-btn {
   font-size: 2rem;
-  color: navy;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+body header nav.navbar ul#menu li a {
+  width: 100%;
+  color: #f5f7f8;
+  display: block;
+  font-weight: 600;
+  padding: 1rem;
+}
+body header nav.navbar ul#menu li a:hover {
+  background-color: #1b1b1b;
+}
+body header nav.navbar ul#menu.open {
+  left: 0;
+}
+body header nav.navbar .hamburger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+body footer {
+  height: 40vh;
 }
 
 /*# sourceMappingURL=output.css.map */
