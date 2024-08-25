@@ -19,6 +19,7 @@ body {
   width: 100%;
 }
 body header {
+  z-index: 9999999;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -134,7 +135,7 @@ body main section.value {
   flex-direction: column-reverse;
 }
 body main section.value .img-1 {
-  height: 80vh;
+  height: 50vh;
   background: url("https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
@@ -142,7 +143,7 @@ body main section.value .img-1 {
   background-attachment: fixed;
 }
 body main section.value .img-2 {
-  height: 80vh;
+  height: 50vh;
   background: url("https://wallpapercave.com/wp/wp4020829.jpg");
   background-position: center;
   background-size: cover;
@@ -150,7 +151,7 @@ body main section.value .img-2 {
   background-attachment: fixed;
 }
 body main section.value .img-3 {
-  height: 80vh;
+  height: 50vh;
   background: url("https://getwallpapers.com/wallpaper/full/a/f/6/1253963-top-computer-programming-wallpaper-1920x1080-for-android-tablet.jpg");
   background-position: center;
   background-size: cover;
@@ -177,6 +178,7 @@ body main section.products {
   padding: 0 10rem;
 }
 body main section.products .description {
+  margin: auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
   max-width: 1200px;
@@ -196,19 +198,19 @@ body main section.products .description p {
 }
 body main section.products .product-list {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 2, minmax(300px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   justify-content: center;
+  justify-items: center;
 }
 body main section.products .product-list .card {
-  z-index: -1;
+  z-index: 1;
+  margin: 2rem;
   position: relative;
-  max-width: 350px;
-  min-width: 300px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   background: #222;
   border-radius: 20px;
@@ -245,8 +247,8 @@ body main section.products .product-list .card .product-description .specificati
   font-weight: 200;
 }
 body main section.products .product-list .card .product-description .price h4 {
-  font-weight: 400;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 body main section.products .product-list .card .discount {
   position: absolute;
@@ -260,10 +262,18 @@ body main section.products .product-list .card .discount {
 }
 body main section.products .product-list .card button {
   border: none;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  font-weight: 600;
-  background-color: #f4ce14;
+  font-weight: 700;
+  color: #f5f7f8;
+  background: #222;
+  border: 0.2rem solid #f4ce14;
+  transition: all 0.2s ease;
   cursor: pointer;
+}
+body main section.products .product-list .card button:hover {
+  color: #1b1b1b;
+  background-color: #fbff00;
 }
 body footer {
   height: 40vh;
