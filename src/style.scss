@@ -30,9 +30,9 @@ body {
   // HEADER & NAVBAR
   header {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     position: fixed;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     nav.navbar {
       display: flex;
       justify-content: space-between;
@@ -145,7 +145,7 @@ body {
       }
     }
     // SECTIONS
-    section.product {
+    section.value {
       display: flex;
       flex-direction: column-reverse;
       .img-1 {
@@ -185,6 +185,103 @@ body {
         p {
           font-weight: 200;
           font-size: 1.2rem;
+        }
+      }
+    }
+    section.products {
+      border-top: 1rem solid #222;
+      padding: 0 10rem;
+      .description {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        max-width: 1200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-weight: 200;
+          font-size: 1.2rem;
+        }
+      }
+      .product-list {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2, minmax(300px, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        .card {
+          z-index: -1;
+          position: relative;
+          max-width: 350px;
+          min-width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #222;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 0px rgba(6, 33, 33, 1);
+          .product-img {
+            img {
+              max-width: 100%;
+              min-width: 300px;
+              max-height: 15rem;
+              min-height: 14rem;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 20px 20px 0 0;
+            }
+          }
+          .product-description {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            h3 {
+              font-size: 1.5rem;
+              font-weight: 400;
+            }
+            p {
+              font-size: 1rem;
+              font-weight: 400;
+            }
+            .specification {
+              p {
+                font-size: 1rem;
+                font-weight: 200;
+              }
+            }
+            .price h4 {
+              font-weight: 400;
+              font-size: 2rem;
+            }
+          }
+          .discount {
+            position: absolute;
+            top: -1rem;
+            right: -1.5rem;
+            padding: 0.2rem 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $background;
+            background-color: $text-bright;
+          }
+          button {
+            border: none;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            background-color: $text-bright;
+            cursor: pointer;
+          }
         }
       }
     }
