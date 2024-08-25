@@ -22,6 +22,7 @@ body header {
   width: 100%;
   margin: auto;
   position: fixed;
+  backdrop-filter: blur(2px);
 }
 body header nav.navbar {
   display: flex;
@@ -94,22 +95,82 @@ body main section#hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+body main section#hero .text {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+body main section#hero .text h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 13px rgba(27, 27, 27, 0.51);
+}
+body main section#hero .text p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 13px rgba(27, 27, 27, 0.51);
+}
+body main section#hero a {
+  padding: 1rem 2rem;
+  color: #1b1b1b;
+  background-color: #f4ce14;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+body main section#hero a:hover {
+  background-color: #fffb00;
 }
 body main section.product {
-  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+body main section.product .img-1 {
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body main section.product .img-2 {
+  height: 80vh;
+  background: url("https://wallpapercave.com/wp/wp4020829.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body main section.product .img-3 {
+  height: 80vh;
   background: url("https://getwallpapers.com/wallpaper/full/a/f/6/1253963-top-computer-programming-wallpaper-1920x1080-for-android-tablet.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body main section.keyboard {
-  height: 100vh;
-  background: url("https://wallpapercave.com/wp/wp4020829.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body main section.product .description {
+  padding: 6rem;
+  border-top: 1rem solid #222;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main section.product .description h2 {
+  font-size: 2rem;
+}
+body main section.product .description p {
+  font-weight: 200;
+  font-size: 1.2rem;
 }
 body footer {
   height: 40vh;
