@@ -12,6 +12,29 @@
   margin-right: auto;
 }
 
+section {
+  border-top: 1rem solid #222;
+}
+section .description {
+  margin: 6rem auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+section .description h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+section .description p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
 body {
   color: #f5f7f8;
   font-family: "Poppins", sans-serif;
@@ -158,45 +181,12 @@ body main section.value .img-3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body main section.value .description {
-  padding: 6rem;
-  border-top: 1rem solid #222;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-body main section.value .description h2 {
-  font-size: 2rem;
-}
-body main section.value .description p {
-  font-weight: 200;
-  font-size: 1.2rem;
-}
 body main section.products {
   border-top: 1rem solid #222;
-  padding: 0 10rem;
-}
-body main section.products .description {
-  margin: auto;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  max-width: 1200px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-}
-body main section.products .description h2 {
-  font-size: 2rem;
-}
-body main section.products .description p {
-  font-weight: 200;
-  font-size: 1.2rem;
+  margin-bottom: 4rem;
 }
 body main section.products .product-list {
+  margin: auto 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
@@ -236,7 +226,7 @@ body main section.products .product-list .card .product-description {
 }
 body main section.products .product-list .card .product-description h3 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 body main section.products .product-list .card .product-description p {
   font-size: 1rem;
@@ -249,6 +239,12 @@ body main section.products .product-list .card .product-description .specificati
 body main section.products .product-list .card .product-description .price h4 {
   font-weight: 500;
   font-size: 1.6rem;
+  text-decoration: line-through;
+}
+body main section.products .product-list .card .product-description .price h5 {
+  color: #f4ce14;
+  font-weight: 600;
+  font-size: 1rem;
 }
 body main section.products .product-list .card .discount {
   position: absolute;
@@ -274,6 +270,9 @@ body main section.products .product-list .card button {
 body main section.products .product-list .card button:hover {
   color: #1b1b1b;
   background-color: #fbff00;
+}
+body main section.about {
+  margin-bottom: 4rem;
 }
 body footer {
   height: 40vh;
