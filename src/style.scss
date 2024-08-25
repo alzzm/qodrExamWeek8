@@ -128,6 +128,7 @@ body {
   main {
     // HERO SECTION
     section#hero {
+      border: none;
       height: 100vh;
       background: url('https://blogs.windows.com/wp-content/uploads/prod/sites/2/2019/10/d838e29e23edfca187af47fd65ff2d7e.jpg');
       background-position: center;
@@ -215,7 +216,9 @@ body {
     section.products {
       border-top: 1rem solid #222;
       margin-bottom: 4rem;
-      // .description {
+      .description {
+        margin: 4rem auto;
+      }
       //   margin: auto;
       //   margin-top: 6rem;
       //   margin-bottom: 6rem;
@@ -257,8 +260,7 @@ body {
             img {
               max-width: 100%;
               min-width: 300px;
-              max-height: 15rem;
-              min-height: 14rem;
+              height: 14rem;
               object-fit: cover;
               object-position: center;
               border-radius: 20px 20px 0 0;
@@ -329,9 +331,71 @@ body {
     }
     section.about {
       margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .description {
+        max-width: 800px;
+        margin: 4rem auto;
+        p {
+          font-size: 1rem;
+        }
+      }
+      .img {
+        height: 50vh;
+        width: 100%;
+        background: url('https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .values-title {
+        width: 100%;
+        text-align: center;
+        border-top: 1rem solid #222;
+        padding: 4rem 2rem;
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          max-width: 800px;
+          margin-top: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          font-weight: 200;
+          font-size: 1rem;
+        }
+      }
+      .values {
+        padding: 2rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1rem;
+        .card {
+          max-width: 300px;
+          background: #222;
+          box-shadow: 0px 0px 10px 0px rgba(6, 33, 33, 1);
+          padding: 2rem;
+          border-radius: 10px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          gap: 2rem;
+          p {
+            text-align: start;
+            line-height: 1.8;
+            font-weight: 200;
+          }
+        }
+      }
     }
   }
-  footer {
-    height: 40vh;
-  }
+}
+footer {
+  height: 40vh;
 }
