@@ -156,6 +156,8 @@ body {
           font-size: 1.6rem;
           font-weight: 300;
           text-shadow: 2px 2px 13px rgba(27, 27, 27, 0.51);
+          animation-delay: 3s;
+          transform: translateX(-100px);
         }
       }
       a {
@@ -165,6 +167,8 @@ body {
         font-weight: 600;
         font-size: 1.2rem;
         transition: all 0.2s ease-in-out;
+        animation-delay: 5s;
+        transform: translateY(100px);
       }
       a:hover {
         background-color: #fffb00;
@@ -522,5 +526,24 @@ footer {
         }
       }
     }
+  }
+}
+
+//ANIMATIONS
+.appearsIn {
+  animation-name: appearsIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+@keyframes appearsIn {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

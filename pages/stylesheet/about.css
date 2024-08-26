@@ -1,0 +1,19 @@
+main .about-img1 {
+  width: 100%;
+  height: 70vh;
+  background: url('https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?cs=srgb&dl=pexels-junior-teixeira-1064069-2047905.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main .about-img2 {
+  width: 100%;
+  height: 50vh;
+  background: url('https://images.pexels.com/photos/7727496/pexels-photo-7727496.jpeg?cs=srgb&dl=pexels-anthony-gideon-470707-7727496.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
