@@ -16,10 +16,9 @@ section {
   border-top: 1rem solid #222;
 }
 section .description {
-  margin: 6rem auto;
-  padding: 0 2rem;
-  max-width: 1200px;
-  text-align: center;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,9 @@ section .description h2 {
 }
 section .description p {
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
 }
 
 body {
@@ -266,7 +267,7 @@ body main section.products .product-list .card button {
   font-weight: 700;
   color: #f5f7f8;
   background: #222;
-  border: 0.2rem solid #f4ce14;
+  border: 0.15rem solid #f4ce14;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -301,7 +302,7 @@ body main section.about .values-title {
   width: 100%;
   text-align: center;
   border-top: 1rem solid #222;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
 }
 body main section.about .values-title h3 {
   font-size: 2rem;
@@ -339,9 +340,133 @@ body main section.about .values .card p {
   line-height: 1.8;
   font-weight: 200;
 }
+body main section.contact {
+  margin-bottom: 4rem;
+}
+body main section.contact .description {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+body main section.contact form {
+  padding: 1rem;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+body main section.contact form .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 300px;
+  gap: 0.2rem;
+}
+body main section.contact form .input label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+body main section.contact form .input input {
+  height: 2rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #f5f7f8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #f5f7f8;
+}
+body main section.contact form .message-send {
+  width: 100%;
+  gap: 1rem;
+}
+body main section.contact form .message-send .submit-btn {
+  margin: 2rem auto;
+}
+body main section.contact form .message-send .submit-btn button {
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  border: none;
+  color: #1b1b1b;
+  background-color: #f4ce14;
+  cursor: pointer;
+}
+@media (min-width: 680px) {
+  body main section.contact form .message-send {
+    grid-column: 1/3;
+  }
+}
 
 footer {
-  height: 40vh;
+  border-top: 1rem solid #222;
+  min-height: 40vh;
+}
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+}
+footer .container .top-footer {
+  padding: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer .container .top-footer .company-logo {
+  align-self: center;
+  flex: 1;
+}
+footer .container .top-footer .company-logo h5 {
+  font-size: 1.6rem;
+  color: #f4ce14;
+  font-style: italic;
+}
+footer .container .top-footer .company-logo p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+footer .container .top-footer .links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+footer .container .top-footer .links .item h5 {
+  font-size: 1.2rem;
+}
+footer .container .top-footer .links .item a {
+  font-size: 0.8rem;
+  color: #d6efd8;
+}
+footer .container .top-footer .links .item a:hover {
+  color: #f4ce14;
+}
+footer .container .bottom-footer {
+  border-top: 0.2rem solid #468585;
+  padding: 2rem;
+}
+footer .container .bottom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+footer .container .bottom-footer .container .socials {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=output.css.map */

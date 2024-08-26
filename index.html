@@ -27,8 +27,8 @@
           </div>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
-          <li><a href="#">Partnership</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <div class="hamburger-btn">
           <i class="bx bx-menu" id="open-btn"></i>
@@ -38,10 +38,10 @@
     <main>
       <section id="hero">
         <div class="text">
-          <h1>Unleashed Creativity, Ignite Innovation</h1>
+          <h1>Unleashed Creativity, Achieve Goals</h1>
           <p>Fuel passions to drive innovations</p>
         </div>
-        <a href="#">Learn More</a>
+        <a href="#products">Read More</a>
       </section>
 
       <section class="value">
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="description">
           <h2>Our Products</h2>
         </div>
@@ -184,7 +184,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="description">
           <h2>About Us</h2>
           <p>
@@ -223,8 +223,91 @@
           </div>
         </div>
       </section>
+
+      <section class="contact" id="contact">
+        <div class="description">
+          <h2>Contact Us</h2>
+          <p>Contact us via phone, email, or live chat, and we'll get back to you promptly. Your satisfaction is our priority</p>
+        </div>
+        <form action="#">
+          <div class="input">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div class="input">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="message-send input">
+            <label for="message-input">Message</label>
+            <input type="text" name="message-input" id="message-input" />
+
+            <div class="submit-btn">
+              <button type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <div class="company-logo">
+            <h5>VerteX</h5>
+            <p>Fuel passions to drive innovations</p>
+          </div>
+          <div class="links">
+            <div class="company item">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="resources item">
+              <h5>Resources</h5>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Learning Center</a></li>
+                <li><a href="#">Manual</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="legal item">
+              <h5>Legal</h5>
+              <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Trade Marks</a></li>
+                <li><a href="#">Data Management</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="text">
+              <p><span>&copy;</span> VerteX, Inc. 2024</p>
+            </div>
+            <div class="socials">
+              <div><i class="bx bxl-linkedin-square" style="color: #ffffff"></i></div>
+              <div><i class="bx bxl-facebook-square" style="color: #ffffff"></i></div>
+              <div><i class="bx bxl-instagram-alt" style="color: #ffffff"></i></div>
+              <div><i class="bx bxl-youtube" style="color: #ffffff"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
